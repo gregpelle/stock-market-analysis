@@ -5,9 +5,9 @@ using Microsoft.Extensions.Logging;
 
 namespace gregpelle.Retrieval
 {
-    public static class StockMarketFetcher
+    public static class StockerMarketDataFetcher
     {
-        [FunctionName("StockMarketFetcher")]
+        [FunctionName("StockerMarketDataFetcher")]
         public static void Run([TimerTrigger("0 0 20 * * Mon-Fri")]TimerInfo myTimer, ILogger log)
         {
             log.LogInformation($"C# Timer trigger function executed at: {DateTime.Now}");
